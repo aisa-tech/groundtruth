@@ -1,0 +1,6 @@
+{
+  "name": "hybrid_rerank",
+  "mode": "hybrid",
+  "rerank": true,
+  "chunk_size": 512
+}

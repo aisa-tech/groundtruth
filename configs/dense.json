@@ -1,0 +1,6 @@
+{
+  "name": "dense",
+  "mode": "dense",
+  "rerank": false,
+  "chunk_size": 512
+}

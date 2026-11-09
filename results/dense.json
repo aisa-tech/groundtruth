@@ -1,0 +1,14 @@
+{
+  "config": "dense",
+  "recall@10": 0.6804,
+  "mrr": 0.3557,
+  "ndcg@10": 0.4341,
+  "p95_latency_ms": 14.0,
+  "by_category": {
+    "governing_law": 0.4211,
+    "ip_ownership": 0.85,
+    "liability_cap": 0.6111,
+    "non_compete": 0.85,
+    "termination": 0.65
+  }
+}

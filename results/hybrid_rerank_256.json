@@ -1,0 +1,14 @@
+{
+  "config": "hybrid_rerank_256",
+  "recall@10": 0.8454,
+  "mrr": 0.5891,
+  "ndcg@10": 0.6507,
+  "p95_latency_ms": 181.0,
+  "by_category": {
+    "governing_law": 0.6316,
+    "ip_ownership": 0.95,
+    "liability_cap": 0.8889,
+    "non_compete": 0.9,
+    "termination": 0.85
+  }
+}

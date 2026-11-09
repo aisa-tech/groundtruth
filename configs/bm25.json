@@ -1,0 +1,6 @@
+{
+  "name": "bm25",
+  "mode": "bm25",
+  "rerank": false,
+  "chunk_size": 512
+}
