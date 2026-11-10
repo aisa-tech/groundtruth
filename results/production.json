@@ -1,14 +1,14 @@
 {
   "config": "production",
-  "recall@10": 0.8454,
-  "mrr": 0.5891,
-  "ndcg@10": 0.6507,
-  "p95_latency_ms": 178.2,
+  "recall@10": 0.9588,
+  "mrr": 0.8226,
+  "ndcg@10": 0.8568,
+  "p95_latency_ms": 169.4,
   "by_category": {
-    "governing_law": 0.6316,
-    "ip_ownership": 0.95,
-    "liability_cap": 0.8889,
+    "governing_law": 0.8947,
+    "ip_ownership": 1.0,
+    "liability_cap": 1.0,
     "non_compete": 0.9,
-    "termination": 0.85
+    "termination": 1.0
   }
 }

@@ -1,6 +1,7 @@
 {
   "name": "production",
   "mode": "hybrid",
-  "rerank": false,
-  "chunk_size": 256
+  "rerank": true,
+  "chunk_size": 256,
+  "title_prefix": true
 }

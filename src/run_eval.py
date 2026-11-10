@@ -8,12 +8,23 @@ from src.metrics import recall_at_k, mrr, ndcg_at_k
 def load_jsonl(p):
     return [json.loads(l) for l in open(p)]
 
+def _title(doc_id):
+    return doc_id.replace("_", " ").replace("-", " ")
+
 def main(cfg_path, golden="data/golden_v1.jsonl"):
     cfg = json.load(open(cfg_path))
+    sa = cfg.get("sentence_aware", False)
     chunks = [dict(c, doc_id=d["doc_id"])
               for d in load_jsonl("data/corpus.jsonl")
-              for c in chunk(d["text"], size=cfg["chunk_size"])]
-    r = Retriever(chunks, mode=cfg["mode"], rerank=cfg["rerank"])
+              for c in chunk(d["text"], size=cfg["chunk_size"], sentence_aware=sa)]
+    if cfg.get("title_prefix", False):
+        # Spans are scored by start/end, so changing the text does not affect gold matching.
+        for c in chunks:
+            c["text"] = f"{_title(c['doc_id'])}\n{c['text']}"
+    r = Retriever(chunks, mode=cfg["mode"], rerank=cfg["rerank"],
+                  embed_model=cfg.get("embed_model", "BAAI/bge-small-en-v1.5"),
+                  rerank_model=cfg.get("rerank_model", "cross-encoder/ms-marco-MiniLM-L-6-v2"),
+                  rerank_pool=cfg.get("rerank_pool", 50))
     rows = []
     for q in load_jsonl(golden):
         t = time.perf_counter()
