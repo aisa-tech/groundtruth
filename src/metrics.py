@@ -6,7 +6,7 @@ def overlaps(chunk, span):
             and chunk["start"] < span["end"] and chunk["end"] > span["start"])
 
 def hit_vector(results, relevant):
-    """Her sonuç için 1 ya da 0. Aynı span'i ikinci kez bulan chunk sayılmaz."""
+    """Returns 1 or 0 per result. A chunk that covers an already-covered span is not counted again."""
     covered, hits = set(), []
     for ch in results:
         new = [i for i, s in enumerate(relevant) if i not in covered and overlaps(ch, s)]
