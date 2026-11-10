@@ -14,4 +14,4 @@
 - [x] CI: production config, results/baseline_metrics.json, tests/test_regression.py, .github/workflows/eval.yml
 - [x] [HUMAN] Open a bad-change PR and screenshot the red check
 - [x] [HUMAN] Error analysis: 5 failing queries and why
-- [ ] README final pass
+- [x] README final pass
