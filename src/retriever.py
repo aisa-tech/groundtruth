@@ -23,7 +23,7 @@ class Retriever:
         return list(np.argsort(-self.bm25.get_scores(q.lower().split()))[:n])
 
     def _rrf(self, lists, k=60):
-        """Reciprocal rank fusion: iki sıralamayı skor ölçeğine bakmadan birleştirir."""
+        """Reciprocal rank fusion: merges two rankings without looking at score magnitudes."""
         score = {}
         for lst in lists:
             for rank, idx in enumerate(lst):

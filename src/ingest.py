@@ -9,7 +9,7 @@ def build_corpus(n_docs=150, src="data/CUADv1.json", out="data/corpus.jsonl"):
                                 "text": doc["paragraphs"][0]["context"]}) + "\n")
 
 def chunk(text, size=512, overlap=64):
-    """Karakter bazlı chunk. Her chunk başlangıç ve bitiş konumunu taşır."""
+    """Character-based chunker. Each chunk carries its start and end position."""
     chunks, start = [], 0
     while start < len(text):
         end = min(start + size * 4, len(text))  # ~4 karakter = 1 token

@@ -1,0 +1,6 @@
+{
+  "name": "production",
+  "mode": "hybrid",
+  "rerank": false,
+  "chunk_size": 256
+}

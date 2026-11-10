@@ -18,4 +18,4 @@ with open("data/golden_draft.jsonl", "w") as f:
                 "answer_preview": r["answer"],
                 "relevant": [{"doc_id": r["doc_id"], "start": r["start"], "end": r["end"]}],
                 "reviewed": False}) + "\n")
-print("yazildi: data/golden_draft.jsonl")
+print("written: data/golden_draft.jsonl")

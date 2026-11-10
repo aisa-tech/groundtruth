@@ -1,0 +1,97 @@
+{
+  "n": 10,
+  "avg_faithfulness": 3.5,
+  "avg_relevance": 3.8,
+  "rows": [
+    {
+      "qid": "termination-005",
+      "category": "termination",
+      "query": "What notice period must CBC provide before terminating the MediWound supply agreement, and why is such an extended period required?",
+      "answer": "CBC must give at least 24 months' written notice to MediWound, or a longer period if that is reasonable for MediWound's needs [2].\n\nThe passage explains why the period is so long. It must give MediWound enough time to establish an alternative source of manufacture of Bromelain SP, and/or to acquire enough Bromelain SP inventory to cover a 24-month period [2].\n\nFor comparison, MediWound can terminate at any time with 6 months' written notice [4]. The passages do not say anything more about the reasons behind this difference.",
+      "faithfulness": 4,
+      "relevance": 5,
+      "reason": "The answer is accurate on the main points. Section 10.2 says CBC must give at least 24 months' written notice, or a longer period if reasonable for MediWound to set up an alternative source of Bromelain SP and/or build enough inventory for 24 months. Section 10.1 says MediWound can terminate with 6 months' notice. Two small issues: the passage describes the longer period as 'such greater period as may be reasonable for MediWound to establish an alternative source...', which is slightly different from the answer's 'if that is reasonable for MediWound's needs'. The answer also treats the 24-month period as the thing that gives MediWound time to find an alternative source, which is a reasonable reading but a mild inference. The citation numbering is also not verifiable. The answer directly addresses both the notice period and the rationale."
+    },
+    {
+      "qid": "governing_law-016",
+      "category": "governing_law",
+      "query": "What state's law governs the Adams Golf endorsement agreement?",
+      "answer": "The agreement is governed by the laws of the State of Kansas. Section 25, \"Applicable Law,\" says: \"This Agreement shall be governed and construed according to the laws of the State of Kansas.\" [1]",
+      "faithfulness": 5,
+      "relevance": 5,
+      "reason": "The passage's Section 25, 'Applicable Law,' states that the Agreement is governed and construed according to the laws of the State of Kansas. The answer quotes this accurately and makes no unsupported claims. It also directly answers the question about governing law."
+    },
+    {
+      "qid": "governing_law-004",
+      "category": "governing_law",
+      "query": "Which jurisdiction's law applies to the BellRing Brands master supply agreement?",
+      "answer": "The passages don't say which jurisdiction's law governs the BellRing Brands master supply agreement.\n\n- Passage [1] mentions BellRing Brands, Inc. only as a parent/affiliate of PNC, in a securities-law and confidentiality provision. It refers generally to U.S. securities laws and says nothing about governing law.\n- Passage [3] covers dispute resolution and venue (the Southern District of New York), but it comes from the Miltenyi Biotec\u2013Bellicum Supply Agreement, not the BellRing agreement. It also deals with where actions are brought, not which law applies.\n- Passage [4] is a Master Supply Agreement between Reynolds Consumer Products and Pactiv, which also isn't the BellRing agreement, and the excerpt doesn't state a governing law.",
+      "faithfulness": 4,
+      "relevance": 5,
+      "reason": "The answer correctly says the passages do not state the governing law for the BellRing-related agreement. Its description of the passages is mostly accurate. Passage 1 mentions BellRing only as a parent/affiliate of PNC in a securities-law and confidentiality clause. The Miltenyi-Bellicum passage covers venue in the Southern District of New York, not governing law. The Reynolds-Pactiv excerpt gives no governing law. One small issue is the passage numbering ([1], [3], [4]), which is an assumption about order, and the numbering seems to match the passage order given. Another is the claim that the Miltenyi passage is 'not the BellRing agreement,' which is reasonable. The answer directly addresses the question by explaining why it cannot be answered from the passages."
+    },
+    {
+      "qid": "termination-018",
+      "category": "termination",
+      "query": "What notice period is required when either party terminates the OrbSat Corp strategic alliance agreement?",
+      "answer": "The passages do not mention an OrbSat Corp strategic alliance agreement, so I can't answer the question as asked.\n\nThe passages cover other agreements:\n- [1] is between ARGO and YEC. It requires not less than 60 days' prior written notice to terminate the strategic alliance, and it allows termination for uncured default after 60 days.\n- [3] is between AVDU and UTK. Either party may terminate on 30 days' written notice.\n- [2], [4], and [5] cover other agreements with cure periods of 30, 15, and 30 days.\n\nNone of these identify OrbSat Corp as a party, so I can't say which, if any, applies to it.",
+      "faithfulness": 4,
+      "relevance": 4,
+      "reason": "The answer correctly says the passages never mention OrbSat Corp, and its summaries of the other agreements match the text. ARGO/YEC needs 60 days' notice to terminate the alliance and has a 60-day cure period. AVDU/UTK allows termination on 30 days' notice. The cure periods of 30, 15 and 30 days for passages 2, 4 and 5 are also right. One small imprecision: passage 2 is described only as 'other agreements' and its Strategic Alliance Agreement link is not mentioned. The 15-day cure period in passage 4 is for Newegg/Allied. The answer is relevant because it declines to answer for OrbSat and offers helpful context, though it gives no direct answer to the question."
+    },
+    {
+      "qid": "ip_ownership-017",
+      "category": "ip_ownership",
+      "query": "Which domain names does THC transfer to HERC under the Hertz Global Holdings intellectual property agreement?",
+      "answer": "According to the passages, THC assigns to HERC the \"THC ERB Domains.\" These are the domains owned by THC that relate to the Equipment Rental Business (ERB) and that do not incorporate the mark/name HERTZ. They are listed on Schedule H, and the assignment is set out in the Domain Name Assignment attached as Exhibit D [2].\n\nTHC does not transfer the domains that do incorporate the HERTZ name. Those are the \"THC (HERTZ) ERB Domains,\" listed on Schedule G. THC keeps ownership of them and grants HERC a royalty-free, non-exclusive license to use them for the Interim Period [3]. HERC must stop using them immediately when the Interim Period expires or the agreement or license is terminated earlier. HERC must also make sure none of them resolve to a website at that point [2].\n\nThe passages do not give the actual domain names on Schedules G or H.",
+      "faithfulness": 0,
+      "relevance": 0,
+      "reason": "parse error: {\"faithfulness\": 5, \"relevance\": 5, \"reason\": \"Every claim matches the passages."
+    },
+    {
+      "qid": "ip_ownership-013",
+      "category": "ip_ownership",
+      "query": "What must Legacy Education Alliance do if it acquires any ownership rights in the licensed intellectual property under the development agreement?",
+      "answer": "If Legacy Education Alliance (LEA) is deemed to have acquired any ownership rights in the Licensed Intellectual Property, it must assign all of those rights to T&B or its nominee. It must also execute all documents that T&B reasonably requests to carry out that assignment [2].\n\nThis sits alongside the agreement's statement that LEA receives no title or ownership in the Licensed Intellectual Property, except as otherwise specifically provided. LEA also may not contest or impair T&B's right, title and interest in it [2].",
+      "faithfulness": 5,
+      "relevance": 5,
+      "reason": "Every claim matches the passage text in sections 3.5 and 3.6. LEA must assign any ownership rights it is deemed to have acquired to T&B or its nominee and execute reasonably requested documents. LEA receives no title or ownership except as otherwise provided, and it may not contest or impair T&B's rights. The answer directly addresses the question. The citation [2] is a minor labeling issue, but the content is supported."
+    },
+    {
+      "qid": "ip_ownership-010",
+      "category": "ip_ownership",
+      "query": "How is Aimmune Know-How transferred under the Aimmune Therapeutics development agreement?",
+      "answer": "Under the agreement, Aimmune Know-How is transferred to Xencor upon termination of the agreement. The details are as follows:\n\n- **Timing and scope:** Upon termination, Aimmune will promptly transfer to Xencor copies of any physical embodiment of any Aimmune Know-How, to the extent it is then used in connection with the Development or Commercialization of the Product [2].\n- **Documents:** The transfer is effected by delivering material documents, to the extent the Aimmune Know-How is embodied in those documents [2].\n- **Non-documented know-how:** To the extent the know-how is not fully embodied in documents, Aimmune must make its employees and agents who have knowledge of it available to Xencor for interviews, demonstrations and training. This must be done in a manner sufficient to enable Xencor to practice the Aimmune Know-How [1][2].\n- **Limitation:** The transfer is only in the manner set out in Section 14.3 [1][2].\n- **Procedure:** The Aimmune Know-How is transferred pursuant to the procedure for transferring Xencor Know-How, Regulatory Materials, and Regulatory Data in Section 2.7, applied mutatis mutandis [1][",
+      "faithfulness": 4,
+      "relevance": 5,
+      "reason": "The answer closely follows Section 14.3 as quoted in the passages: transfer on termination, copies of physical embodiments, delivery of documents, interviews, demonstrations and training, the 'only in the manner set out' limitation, and the Section 2.7 procedure applied mutatis mutandis. The claims are well supported. The answer is cut off at the end, leaving the last citation incomplete, and the 'Limitation' bullet is a slightly loose paraphrase. It directly addresses the question."
+    },
+    {
+      "qid": "governing_law-019",
+      "category": "governing_law",
+      "query": "What substantive law governs the Rare Element Resources intellectual property agreement?",
+      "answer": "The agreement is construed under the substantive laws of the state of New York and of the United States of America [3].\n\nArticle 18.04 adds that questions about the construction, validity, enforcement and interpretation of the IP Agreement are determined under the provisions of the Investment Agreement [1]. The passages do not say which law the Investment Agreement itself selects.",
+      "faithfulness": 0,
+      "relevance": 0,
+      "reason": "parse error: Passage numbering is unclear, but the claims can be checked against the passage "
+    },
+    {
+      "qid": "governing_law-015",
+      "category": "governing_law",
+      "query": "What law governs all claims arising out of the Azul SA maintenance agreement amendment?",
+      "answer": "The passages do not directly say what law governs claims under the amendment. The text of the amendment's own governing law clause (Clause 5, \"Governing Law - Arbitration\") is not included. The table of contents lists it [2], and only the end of it appears, which mentions the ICC Rules of Conciliation and Arbitration on conservatory and interim measures [3].\n\nThe underlying Global Maintenance Agreement (GMA) is governed by New York law. Clause",
+      "faithfulness": 4,
+      "relevance": 4,
+      "reason": "The answer is accurate on what it says. Clause 5 'Governing Law - Arbitration' is in the amendment's table of contents, and only the tail of it appears, mentioning ICC Rules on conservatory and interim measures. The GMA Clause 24.1 is governed by New York law. The amendment's own governing-law text is indeed missing. Amendment 6.2 says the GMA terms remain valid where not inconsistent, so New York law may apply by implication, but the passages do not say so. The answer is cut off mid-sentence ('Clause'), so it is incomplete. It still addresses the question by saying the passages don't state the amendment's governing law and pointing to the GMA's New York law as the nearest evidence. The citation markers [2] and [3] are plausible but cannot be checked."
+    },
+    {
+      "qid": "termination-010",
+      "category": "termination",
+      "query": "What is the minimum notice period the Repairer may grant under the Azul SA maintenance agreement?",
+      "answer": "The passages do not give a specific minimum notice period. Passage [1] says the Company may terminate for convenience by Notice, and that the Agreement ends after a \"[*****]\" period from the Repairer's receipt of the Notice \"or any other lesser period to be granted by the Repairer.\" The length of the period is redacted, so no minimum or specific figure can be identified. The only thing the passage establishes is that the Repairer may grant a shorter period than the redacted default [1].",
+      "faithfulness": 5,
+      "relevance": 5,
+      "reason": "The answer matches the passage. The termination-for-convenience clause gives a redacted period from the Repairer's receipt of the Notice 'or any other lesser period to be granted by the Repairer.' It correctly says the length is redacted, so no specific minimum can be identified, and it correctly notes that the Repairer may grant a shorter period. It addresses the question directly by explaining why no figure can be given."
+    }
+  ]
+}
